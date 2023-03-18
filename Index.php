@@ -1,54 +1,26 @@
-<?php include ("base_datos.php")?>
+<!doctype html>
+<html lang="en">
 
-<?php include ("includes/header.php")?>
+<head>
+  <title>Word Gaming</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
 
-<div class="container p-4">
+</head>
+
+ 
+<body background="Background1.png" background-size="cover"> 
+
+<style> 
+body {background: ("Background1.png");
+  background-size: cover;
+}
     
-  <div class="row">
+</style>
 
-    <div class="col-md-4">
+<a href="Profile.php"><img src="Start1.png" width="-80%" height="15%"
+style="position: fixed; top: 50%; left: 50%; transform: translate(-80%, -200%)">
+</a>
 
-        <?php if(isset($_SESSION['message'])) { ?>
-            <div class="alert alert-<?=$_SESSION['message_type'];?> alert-dismissible fade show" role="alert">
-            <?= $_SESSION['message'] ?>
-            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-            </div>
-            <?php session_unset(); } ?>
-
-         <div class ="card card-body ">
-
-            <form action="Guardar.php" method="POST">
-
-                <div class ="form-group">
-                    <input type="text" name="Nombre" class="form-control" 
-                     placeholder="Nombre del juego" autofocus>
-                </div>
-
-                <div class ="form-group">
-                    <textarea name="Caracteristica" row="4" class="form-control" placeholder="Caracteristica"> 
-                    </textarea>
-                </div>
-
-                <input type="submit" class="btn btn-success btn-block" name = "Guardar" 
-                value = "Guardar juego" >
-
-                <div class="col-md-8">
-
-                  echo "hola";
-
-                </div>
-                
-            </form>
-         </div>
-        
-    </div>
-
-  </div>
-  
-</div>
-
-
-
-
-<?php include("includes/footer.php") ?>
-
+</body>
+</html>

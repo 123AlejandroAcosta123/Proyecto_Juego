@@ -2,17 +2,17 @@
 <html lang="en">
 
 <head>
-  <title>Update</title>
+  <title>Word Gaming</title>
   <!-- Required meta tags -->
   <meta charset="utf-8">
 
 </head>
 
  
-<body background="FondoAdd.jpg" background-size="cover"> 
+<body background="FondoRead.jpg" background-size="cover"> 
 
 <style> 
-body {background: ("FondoAdd.jpg");
+body {background: ("FondoRead.jpg" );
   background-size: cover;
 }
     
